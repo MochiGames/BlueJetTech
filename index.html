@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/YbqnWnk/Screenshot-2023-12-26-225600.png">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -23,6 +24,11 @@
             justify-content: space-between;
         }
 
+        #logo-container {
+            display: flex;
+            align-items: center;
+        }
+
         #logo {
             max-width: 100px; /* Adjust the size as needed */
             height: auto;
@@ -33,6 +39,7 @@
         nav {
             display: flex;
             align-items: center;
+            margin-right: 50px;
         }
 
         nav a {
@@ -44,14 +51,32 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        #favicon-text {
+            font-size: 16px;
+            margin-left: 5px;
+            display: none;
+        }
+
+        #copyright {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        #logo-container:hover #favicon-text {
+            display: inline;
+        }
     </style>
     <title>Blue Jet Tech</title>
 </head>
 <body>
     <header>
-        <a href="https://bluejettech.com" target="_blank">
-            <img id="logo" src="https://i.ibb.co/YbqnWnk/Screenshot-2023-12-26-225600.png" alt="Blue Jet Tech Logo">
-        </a>
+        <div id="logo-container">
+            <a href="https://bluejettech.com" target="_blank">
+                <img id="logo" src="https://i.ibb.co/YbqnWnk/Screenshot-2023-12-26-225600.png" alt="Blue Jet Tech Logo">
+                <span id="favicon-text">Blue Jet Tech</span>
+            </a>
+        </div>
         <nav>
             <a href="https://bluejettech.com">Home</a> •
             <a href="https://bluejettech.com/companies">Companies</a> •
@@ -64,5 +89,8 @@
     <section>
         <p>Your text goes here.</p>
     </section>
+    <footer>
+        <p id="copyright">© Copyright 2019-2024 Blue Jet Tech INC | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
