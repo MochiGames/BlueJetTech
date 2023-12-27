@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/YbqnWnk/Screenshot-2023-12-26-225600.png">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #8bc6fc;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8bc6fc;
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 100px;
+            height: auto;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.highlight {
+            text-decoration: underline;
+        }
+
+        #favicon-text {
+            font-size: 16px;
+            margin-left: 5px;
+            display: none;
+        }
+
+        #big-companies {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #copyright {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        #logo-container:hover #favicon-text {
+            display: inline;
+        }
+
+        #logo-section {
+            margin-top: 20px;
+        }
+
+        .logo-container {
+            margin: 10px;
+            display: inline-block;
+            width: 30%; /* Adjust the width as needed */
+        }
+
+        .logo-img {
+            max-width: 100%; /* Adjust the size as needed */
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+    <title>Companies - Blue Jet Tech</title>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="https://bluejettech.com" target="_blank">
+                <img id="logo" src="https://i.ibb.co/YbqnWnk/Screenshot-2023-12-26-225600.png" alt="Blue Jet Tech Logo">
+                <span id="favicon-text">Blue Jet Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="https://bluejettech.com">Home</a> •
+            <a href="https://bluejettech.com/companies">Companies</a> •
+            <a href="https://bluejettech.com/jobs">Jobs</a> •
+            <a href="https://bluejettech.com/team">Team</a> •
+            <a href="https://bluejettech.com/support">Support</a> •
+            <a href="https://bluejettech.com/aboutus">About Us</a>
+        </nav>
+    </header>
+    
+    <!-- "Companies" text above logos -->
+    <h1 id="big-companies">Companies</h1>
+
+    <!-- Section for logos -->
+    <section id="logo-section">
+        <div class="logo-container" onclick="window.location.href='https://mochig.com';">
+            <img class="logo-img" src="https://i.ibb.co/vmqLRVq/Screenshot-2023-12-26-232601-removebg-preview.png" alt="Logo 1">
+        </div>
+        <div class="logo-container" onclick="window.location.href='https://minelync.net';">
+            <img class="logo-img" src="https://i.ibb.co/2dywJDf/Screenshot-2023-12-26-233005-removebg-preview.png" alt="Logo 2">
+        </div>
+        <div class="logo-container" onclick="window.location.href='https://conformative.xyz';">
+            <img class="logo-img" src="https://i.ibb.co/zhvWj7K/Screenshot-2023-12-26-232855-removebg-preview.png" alt="Logo 3">
+        </div>
+        <div class="logo-container" onclick="window.location.href='https://lrisbands.com';">
+            <img class="logo-img" src="https://i.ibb.co/G2wF9jM/Screenshot-2023-12-26-233119-removebg-preview.png" alt="Logo 4">
+        </div>
+        <div class="logo-container" onclick="window.location.href='https://mgcompany.xyz';">
+            <img class="logo-img" src="https://i.ibb.co/Yd5nX3b/Screenshot-2023-12-26-232655-removebg-preview.png" alt="Logo 5">
+        </div>
+          <div class="logo-container" onclick="window.location.href='https://sites.google.com/washk12.org/mag';">
+            <img class="logo-img" src="https://i.ibb.co/HKXPshL/Screenshot-2023-12-27-004741-removebg-preview.png" alt="Logo 6">
+        </div>
+    </section>
+
+    <!-- ... existing content ... -->
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="copyright">© Copyright 2019-2024 Blue Jet Tech INC | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
